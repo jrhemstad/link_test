@@ -21,3 +21,5 @@ I link both `A.so` and `B.so` against my executable `main`.
 In other words, if I modify `v` from `A.so` like `instance() = 42`, is that visible from `B.so`?
 
 **Answer**: Yes! A.so and B.so see the same object. 
+
+StackOverflow Question: https://stackoverflow.com/questions/62336104/are-function-local-static-objects-of-inline-functions-shared-across-shared-objec
