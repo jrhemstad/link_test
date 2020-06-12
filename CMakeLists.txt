@@ -5,6 +5,8 @@ set(CMAKE_C_COMPILER $ENV{CC})
 set(CMAKE_CXX_COMPILER $ENV{CXX})
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+
 add_library(A SHARED a.cpp)
 
 add_library(B SHARED b.cpp)
