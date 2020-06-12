@@ -5,12 +5,14 @@ Answer to the question:
 
 I have a `inline` function with a function local static defined in a header like so:
 
-```///< singleton.hpp
+```
+///< singleton.hpp
 
 inline int& instance(){
    static int v;
    return v;
-}```
+}
+```
 
 I include `header.hpp` into two, independent shared objects `A.so` and `B.so`. 
 I link both `A.so` and `B.so` against my executable `main`. 
