@@ -35,7 +35,7 @@ jhemstad@jh-ws:~/link_test/build$ nm -C ./libA.so
 0000000000201024 u instance()::v
 ```
 
-We see that the function local static, `instance()::v` is marked with the `u` symbol. This symbol means:
+We see that the function local static, `instance()::v`, is marked with the `u` symbol. This symbol means:
 
 >  "u" The symbol is a unique global symbol.  This is a GNU extension to the standard set of ELF
 >               symbol bindings.  For such a symbol the dynamic linker will make sure that in the entire
