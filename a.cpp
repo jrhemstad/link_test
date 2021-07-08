@@ -1,4 +1,8 @@
-#include "singleton.hpp"
+inline int& __attribute__((always_inline)) instance(){
+    static int v;
+    return v;
+}
+
 
 namespace A{
 

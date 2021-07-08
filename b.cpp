@@ -1,4 +1,7 @@
-#include "singleton.hpp"
+inline float& __attribute__((always_inline)) instance(){
+    static float v;
+    return v;
+}
 
 namespace B{
 
